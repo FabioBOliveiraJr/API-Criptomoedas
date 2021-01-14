@@ -12,10 +12,11 @@ fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=b
         for (let i=0;i<10;i++){
             texto = texto + `
             <div class="media">
-                <img src="coin.jpg" alt="coin" class="align-self-center mr-3" width="100" height="60">
+                <img src="coin.jpg" alt="coin" class="align-self-center mr-3" width="166" height="100">
                 <div class="media-body">
                     <h5 class="mt-2">${api.data[i].name}</h5>
                     <p>${api.data[i].symbol}</p>
+                    <p>${api.data[i].first_historical_data}
                 </div>
             </div>
             `;
